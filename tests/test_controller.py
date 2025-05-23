@@ -7,3 +7,5 @@ def test_begin_game(capsys, monkeypatch): #capsys for checking print, monkeypatc
     controller.begin_game()
     printed_menu = capsys.readouterr()
     assert  " *** Welcome to the Mastermind game! Please select a menu choice *** \n" in printed_menu
+
+    

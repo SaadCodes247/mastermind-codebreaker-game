@@ -1,9 +1,8 @@
 # test_controller.py
 from controller import game_controller
 
-
 def test_begin_game(capsys, monkeypatch): #capsys for checking print, monkeypatch for mocking input
-    monkeypatch.setattr("builtins.input", lambda _: "0") # mocks input
+    monkeypatch.setattr("builtins.input", lambda user_entry: "0") # mocks input
     controller = game_controller()
     controller.begin_game()
     printed_menu = capsys.readouterr()

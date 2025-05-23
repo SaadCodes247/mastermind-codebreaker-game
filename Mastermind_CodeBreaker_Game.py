@@ -2,7 +2,6 @@
 
 from controller import game_controller
 
-first_game = game_controller
+first_game = game_controller()
 
 first_game.begin_game()
-

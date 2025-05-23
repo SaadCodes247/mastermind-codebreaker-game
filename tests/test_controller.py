@@ -1,14 +1,10 @@
 # test_controller.py
 from controller import game_controller
 
-game_controller = game_controller()
 
-def test_begin_game(capsys):
-    game_controller.begin_game()
-    stdout, stderr = capsys.readouterr()
-    assert stdout == """
-                    *** Welcome to the Mastermind game! Please select one of the following menu options ***
-                    \n 1: One player codebreaker and one computer codemaker\n 
-                    \n 2: One player codebreaker and one player codebreaker"
-
-                    """
+def test_begin_game(capsys, monkeypatch): #capsys for checking print, monkeypatch for mocking input
+    monkeypatch.setattr("builtins.input", lambda _: "0") # mocks input
+    controller = game_controller()
+    controller.begin_game()
+    printed_menu = capsys.readouterr()
+    assert  " *** Welcome to the Mastermind game! Please select a menu choice *** \n" in printed_menu

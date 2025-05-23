@@ -1,0 +1,30 @@
+
+class controller:
+
+    def __init__(self, number_of_guesses):
+        self.number_of_guesses = number_of_guesses
+
+    def begin_game():
+        game_finished = False
+        menu_choice_option = 0
+
+        enter_menu_option = input("Please select playing mode")
+        match menu_choice_option:
+            case 0:
+                SystemExit
+            case 1:
+                player_vs_computer()
+                print(" ")
+            case 2:
+                player_vs_player()
+
+        print(
+            """
+
+              *** Welcome to the Mastermind game! Please select one of the following menu options ***
+              \n1: One player codebreaker and one computer codemaker\n" + 
+              "2: One player codebreaker and one player codebreaker\n" + 
+              "3: One computer-based codemaker and one computer-based codebreaker
+
+            """
+             )

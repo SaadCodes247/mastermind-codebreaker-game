@@ -1,6 +1,8 @@
 # test_controller.py
 import pytest
+
 from controller import game_controller
+from model import game_model
 
 class TestBeginGameFeatures:
 
@@ -11,12 +13,8 @@ class TestBeginGameFeatures:
             controller.begin_game()
         
 
-        # def test_begin_game_menu_option_1(self, monkeypatch):
-            # monkeypatch.setattr("("builtins.input", lambda user_entry: "0")")
-            # controller = game_controller
-            # controller.begin_game()
-            # printed_menu = capsys.readouterr()
-            # assert  " *** Welcome to the Mastermind game! Please select a menu choice *** \n" in printed_menu
+    def test_begin_game_player_vs_computer_starts(self, monkeypatch, capsys):
+        pass
 
 
 

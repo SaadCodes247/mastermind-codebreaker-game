@@ -9,9 +9,8 @@ class game_model:
         codemaker_peg_colors = ["r","g", "b", "y", "p", "n", "o", "t"]
         print("The computer codemaker sets the code: ")
 
-        self.random_codemaker_peg_code = [random.choice(codemaker_peg_colors) for peg in range(1, codemaker_code_length+1)]
+        self.random_codemaker_peg_code = random.sample(codemaker_peg_colors, codemaker_code_length)
         hidden_codemaker_code = "# "*len(self.random_codemaker_peg_code)
-        print(self.random_codemaker_peg_code)
         print(hidden_codemaker_code, "\n")
         return self.random_codemaker_peg_code
 

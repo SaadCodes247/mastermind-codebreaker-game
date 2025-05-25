@@ -6,7 +6,7 @@ class game_model:
         pass
 
     def set_codemaker_code_to_break(self, codemaker_code_length = 8):
-        codemaker_peg_colors = ["r","g", "b", "y", "p", "n", "o"]
+        codemaker_peg_colors = ["r","g", "b", "y", "p", "n", "o", "t"]
         print("The computer codemaker sets the code: ")
 
         self.random_codemaker_peg_code = [random.choice(codemaker_peg_colors) for peg in range(1, codemaker_code_length+1)]
@@ -30,20 +30,35 @@ class game_model:
         for player_turn in range(1, allowed_guesses+1):
             player_guess_response = []
             player_guess = list(input(f"Player Guess {player_turn}: Please enter a sequence of 8 pegs \n")) #add input helper 
+            
             for peg_index, peg_color in enumerate(player_guess):
                 if peg_color == code_to_break[peg_index]:
                     player_guess_response.append("Black")
                 elif peg_color in code_to_break and peg_color != code_to_break[peg_index]:
                     player_guess_response.append("White")
-            print(f"Response to your guess: {player_guess_response}")
-            
-        for response in player_guess_response:
-            if response != "white":
-                print("Player_1 wins the game")
+            print(f"Response to your guess: {player_guess_response}\n")
+
+            if player_guess_response.count("Black") == self.codemaker_code_length:
+                print("Player_1 wins the game!\n")
                 player_score += 1
-                print(f"Player_1's score is now: {player_score}")
+                print(f"Player_1's score is now: {player_score}\n")
+                print(f"Computer's score is now: {computer_score}\n")
+                break
+        else:
+            print("The Computer has won the game!\n")
+            print(f"Computer's score is now: {computer_score}\n")
+            print(f"Player_1's score is now: {player_score}\n")
+                
+
+            
+
+
+            
+
+
+
         
-        for 
+        
        
         
             

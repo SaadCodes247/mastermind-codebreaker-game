@@ -18,9 +18,7 @@ class game_controller:
                 SystemExit
             case 1:
                 player_vs_computer.play_player_vs_computer(codemaker_code_length = 8, allowed_guesses = 2)
-                
-    def computer_codemaker():
-        pass
+
 
         
     

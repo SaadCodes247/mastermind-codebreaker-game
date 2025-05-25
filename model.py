@@ -15,12 +15,17 @@ class game_model:
         print(hidden_codemaker_code, "\n")
         return self.random_codemaker_peg_code
 
-    def play_player_vs_computer(self, codemaker_code_length, allowed_guesses = 1):
+    def play_player_vs_computer(self, codemaker_code_length, allowed_guesses = 2):
         self.codemaker_code_length = codemaker_code_length
         self.allowed_guesses = allowed_guesses
 
+        player_score = 0
+        computer_score = 0
+        
+
         code_to_break = self.set_codemaker_code_to_break(codemaker_code_length = 8)
         print(code_to_break)
+
 
         for player_turn in range(1, allowed_guesses+1):
             player_guess_response = []
@@ -31,6 +36,19 @@ class game_model:
                 elif peg_color in code_to_break and peg_color != code_to_break[peg_index]:
                     player_guess_response.append("White")
             print(f"Response to your guess: {player_guess_response}")
+            
+        for response in player_guess_response:
+            if response != "white":
+                print("Player_1 wins the game")
+                player_score += 1
+                print(f"Player_1's score is now: {player_score}")
+        
+        for 
+       
+        
+            
+            
+            
 
             
 

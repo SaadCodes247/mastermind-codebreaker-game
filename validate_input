@@ -1,5 +1,15 @@
 # validate user's input
 
+# class ValidateUserPrompts:
 
+#     def __init__(self, user_input):
+#         self.user_input = user_input.strip().lower()
+        
+#     def validate_user_input(self, allowed_chars, required_length = 8):
+#         if(len(self.value())) != required_length:
+#             print("Please enter a string of exactly 8 characters")
+
+#         elif(self.value() not in (char for char in allowed_chars)):
+#              print("Please enter a letter corresponding to one of the peg colours")
 
     

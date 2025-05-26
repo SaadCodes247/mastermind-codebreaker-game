@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-from controller import game_controller
+from controller import GameController
 
-first_game = game_controller()
+mastermind_game = GameController()
 
-first_game.begin_game()
+mastermind_game.begin_game()

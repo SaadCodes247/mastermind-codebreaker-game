@@ -1,13 +1,13 @@
-from model import game_model
+from model import GameModel
 
-class game_controller:
+class GameController:
 
     def __init__(self):
         pass
         
     def begin_game(self):
 
-        player_vs_computer = game_model()
+        player_vs_computer = GameModel()
 
         print(
             """ *** Welcome to the Mastermind game! Please select a menu choice *** """

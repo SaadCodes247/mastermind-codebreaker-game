@@ -1,14 +1,14 @@
 # test_controller.py
 import pytest
 
-from controller import game_controller
-from model import game_model
+from controller import GameController
+from model import GameModel
 
 class TestBeginGameFeatures:
 
     def test_begin_game_system_exit_option(self, capsys, monkeypatch): #capsys for checking print, monkeypatch for mocking input
         monkeypatch.setattr("builtins.input", lambda user_entry: "0") # mocks input
-        controller = game_controller()
+        controller = GameController()
         with pytest.raises(SystemExit):
             controller.begin_game()
         

@@ -1,9 +1,9 @@
 # test model.py
 
-from controller import game_controller
-from model import game_model
+from controller import GameController
+from model import GameModel
 
-class Test_game_model:
+class TestGameModel:
 
     # def test_set_codemaker_code_to_break(self, monkeypatch, capsys):
     #     monkeypatch.setattr("builtins.input", lambda user_entry: "1")

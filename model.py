@@ -1,6 +1,6 @@
 import random
 
-class game_model:
+class GameModel:
 
     def __init__(self):
         pass

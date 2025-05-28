@@ -18,7 +18,3 @@ class GameController:
                 raise SystemExit
             case 1:
                 player_vs_computer.play_player_vs_computer(codemaker_code_length = 8, allowed_guesses = 2)
-
-
-        
-    

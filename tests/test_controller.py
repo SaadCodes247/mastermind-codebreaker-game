@@ -20,13 +20,3 @@ class TestBeginGameFeatures:
         mastermind_game.begin_game()
         printed_menu = capsys.readouterr()
         assert  " *** Welcome to the Mastermind game! Please select a menu choice *** \n" in printed_menu
-
-    # def test_set_codemaker_code_to_break_appears(self, monkeypatch, capsys):
-    #     monkeypatch.setattr("builtins.input", lambda: "1")
-    #     mastermind_game = GameController()
-    #     mastermind_game.begin_game()
-    #     game_start_output = capsys.readouterr()
-    #     assert  "The computer codemaker sets the code: \n" in game_start_output.out()
-
-
-    

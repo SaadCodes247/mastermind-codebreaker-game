@@ -48,31 +48,3 @@ class GameModel:
             computer_score += 1
             print(f"Computer's score is now: {computer_score}\n")
             print(f"Player_1's score is now: {player_score}\n")
-                
-
-            
-
-
-            
-
-
-
-        
-        
-       
-        
-            
-            
-            
-
-            
-
-
-
-        
-
-    
-
-        
-        
-        

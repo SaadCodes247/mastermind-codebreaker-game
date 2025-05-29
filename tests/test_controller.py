@@ -1,4 +1,4 @@
-# test_controller.py
+# test_controller.py / the game menu operates as expected
 import pytest
 
 from controller import GameController
@@ -21,7 +21,12 @@ class TestBeginGameFeatures:
         printed_menu = capsys.readouterr()
         assert  " *** Welcome to the Mastermind game! Please select a menu choice *** \n" in printed_menu
 
-
+    # def test_set_codemaker_code_to_break_appears(self, monkeypatch, capsys):
+    #     monkeypatch.setattr("builtins.input", lambda: "1")
+    #     mastermind_game = GameController()
+    #     mastermind_game.begin_game()
+    #     game_start_output = capsys.readouterr()
+    #     assert  "The computer codemaker sets the code: \n" in game_start_output.out()
 
 
     

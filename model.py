@@ -28,7 +28,7 @@ class GameModel:
 
         for player_turn in range(1, allowed_guesses+1):
             player_guess_response = []
-            player_guess = list(input(f"Player Guess {player_turn}: Please enter a sequence of 8 pegs \n")) #add input helper 
+            player_guess = list(input(f"""Player Guess {player_turn}: Please enter a sequence of 8 pegs\n""")) #add input helper 
             
             for peg_index, peg_color in enumerate(player_guess):
                 if peg_color == code_to_break[peg_index]:
@@ -45,6 +45,7 @@ class GameModel:
                 break
         else:
             print("The Computer has won the game!\n")
+            computer_score += 1
             print(f"Computer's score is now: {computer_score}\n")
             print(f"Player_1's score is now: {player_score}\n")
                 

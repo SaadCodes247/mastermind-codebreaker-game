@@ -1,0 +1,5 @@
+1. Test model gameplay to make sure game is working as it should be
+2. Test controller to make sure computer is setting a code to guess on start
+4. Add validate_input function for user entry
+5. Make it clear to player about how to play the game
+6. Create a readme with game description and video of gameplay

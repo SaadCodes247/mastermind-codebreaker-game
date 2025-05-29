@@ -1,3 +1,4 @@
+from validate_input import ValidatePlayerInput
 import random
 
 class GameModel:
@@ -20,7 +21,8 @@ class GameModel:
 
         player_score = 0
         computer_score = 0
-        
+
+        check_input = ValidatePlayerInput()
 
         code_to_break = self.set_codemaker_code_to_break(codemaker_code_length = 8)
         print(code_to_break)
@@ -28,7 +30,7 @@ class GameModel:
 
         for player_turn in range(1, allowed_guesses+1):
             player_guess_response = []
-            player_guess = list(input(f"""Player Guess {player_turn}: Please enter a sequence of 8 pegs\n""")) #add input helper 
+            player_guess = list(input(f"""Player Guess {player_turn}: Please enter a sequence of 8 pegs\n"""))
             
             for peg_index, peg_color in enumerate(player_guess):
                 if peg_color == code_to_break[peg_index]:

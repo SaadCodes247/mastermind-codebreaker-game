@@ -2,8 +2,6 @@
 import pytest
 
 from controller import GameController
-from model import GameModel
-
 class TestBeginGameFeatures:
 
     def test_begin_game_system_exit_option(self, capsys, monkeypatch): #capsys for checking print, monkeypatch for mocking input

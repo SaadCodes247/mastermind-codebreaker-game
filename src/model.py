@@ -1,4 +1,4 @@
-from validate_input import ValidatePlayerInput
+# from validate_input import ValidatePlayerInput
 import random
 
 class GameModel:
@@ -22,7 +22,7 @@ class GameModel:
         player_score = 0
         computer_score = 0
 
-        check_input = ValidatePlayerInput()
+        # check_input = ValidatePlayerInput()
 
         code_to_break = self.set_codemaker_code_to_break(codemaker_code_length = 8)
         print(code_to_break)

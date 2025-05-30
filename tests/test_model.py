@@ -1,6 +1,6 @@
 # test model.py / the game play
 
-from model import GameModel
+from src.model import GameModel
 
 class TestGameModel:
 

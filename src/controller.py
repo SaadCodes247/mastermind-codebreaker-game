@@ -1,4 +1,4 @@
-from model import GameModel
+from src.model import GameModel
 
 class GameController:
 

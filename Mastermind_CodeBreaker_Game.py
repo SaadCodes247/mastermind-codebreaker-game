@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from controller import GameController
+from src.controller import GameController
 
 mastermind_game = GameController()
 

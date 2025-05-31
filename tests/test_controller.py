@@ -17,4 +17,4 @@ class TestBeginGameFeatures:
         mastermind_game = GameController()
         mastermind_game.begin_game()
         printed_menu = capsys.readouterr()
-        assert  " *** Welcome to the Mastermind game! Please select a menu choice *** \n" in printed_menu
+        assert  "*** Welcome to the Mastermind game! Please select a menu choice ***" in printed_menu

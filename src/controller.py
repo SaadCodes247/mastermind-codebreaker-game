@@ -9,9 +9,8 @@ class GameController:
 
         player_vs_computer = GameModel()
 
-        print(
-            """ *** Welcome to the Mastermind game! Please select a menu choice *** """
-            )
+        print("*** Welcome to the Mastermind game! Please select a menu choice ***")
+        
         menu_choice_option = int(input("Menu Choice: "))
         match menu_choice_option:
             case 0:

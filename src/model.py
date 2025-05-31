@@ -25,7 +25,7 @@ class GameModel:
         # check_input = ValidatePlayerInput()
 
         code_to_break = self.set_codemaker_code_to_break(codemaker_code_length = 8)
-        print(code_to_break)
+        # print(code_to_break) - to debug
 
 
         for player_turn in range(1, allowed_guesses+1):
@@ -40,13 +40,13 @@ class GameModel:
             print(f"Response to your guess: {player_guess_response}\n")
 
             if player_guess_response.count("Black") == self.codemaker_code_length:
-                print("Player_1 wins the game!\n")
+                print(f"Player_1 wins the game! The correct code to guess was: {code_to_break} !\n")
                 player_score += 1
                 print(f"Player_1's score is now: {player_score}\n")
                 print(f"Computer's score is now: {computer_score}\n")
                 break
         else:
-            print("The Computer has won the game!\n")
+            print(f"The Computer has won the game! The correct code to guess was: {code_to_break} !\n")
             computer_score += 1
             print(f"Computer's score is now: {computer_score}\n")
             print(f"Player_1's score is now: {player_score}\n")

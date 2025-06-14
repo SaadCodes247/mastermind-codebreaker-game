@@ -7,13 +7,16 @@ class GameModel:
         pass
 
     def set_codemaker_code_to_break(self, codemaker_code_length = 8):
-        codemaker_peg_colors = ["r","g", "b", "y", "p", "n", "o", "t"]
+        codemaker_peg_colors = ["red","green", "blue", "yellow", "purple", "navy", "orange", "teal"]
+
         print("The computer codemaker sets the code: ")
 
         self.random_codemaker_peg_code = random.sample(codemaker_peg_colors, codemaker_code_length)
         hidden_codemaker_code = "# "*len(self.random_codemaker_peg_code)
         print(hidden_codemaker_code, "\n")
         return self.random_codemaker_peg_code
+
+    
 
     def play_player_vs_computer(self, codemaker_code_length, allowed_guesses = 2):
         self.codemaker_code_length = codemaker_code_length
@@ -24,8 +27,9 @@ class GameModel:
 
         # check_input = ValidatePlayerInput()
 
+        #- to debug 
         code_to_break = self.set_codemaker_code_to_break(codemaker_code_length = 8)
-        # print(code_to_break) - to debug
+        print(code_to_break) 
 
 
         for player_turn in range(1, allowed_guesses+1):
@@ -33,10 +37,10 @@ class GameModel:
             player_guess = list(input(f"""Player Guess {player_turn}: Please enter a sequence of 8 pegs\n"""))
             
             for peg_index, peg_color in enumerate(player_guess):
-                if peg_color == code_to_break[peg_index]:
+                if peg_color == code_to_break[0][peg_index]:
                     player_guess_response.append("Black")
                 elif peg_color in code_to_break and peg_color != code_to_break[peg_index]:
-                    player_guess_response.append("White")
+                    player_guess_response.append[0]("White")
             print(f"Response to your guess: {player_guess_response}\n")
 
             if player_guess_response.count("Black") == self.codemaker_code_length:

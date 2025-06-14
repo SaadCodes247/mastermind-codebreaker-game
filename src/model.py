@@ -25,7 +25,7 @@ class GameModel:
         player_score = 0
         computer_score = 0
 
-        # check_input = ValidatePlayerInput()
+        #check_input = ValidatePlayerInput()
 
         #-to debug 
         code_to_break = self.set_codemaker_code_to_break(codemaker_code_length = 8)

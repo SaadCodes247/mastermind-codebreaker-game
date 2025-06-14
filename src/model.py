@@ -27,7 +27,7 @@ class GameModel:
 
         # check_input = ValidatePlayerInput()
 
-        #- to debug 
+        #-to debug 
         code_to_break = self.set_codemaker_code_to_break(codemaker_code_length = 8)
         print(code_to_break) 
 

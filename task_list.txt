@@ -1,4 +1,3 @@
 1. Test model gameplay to make sure game is working as it should be
 2. Add validate_input function for user entry
-3. Make it clear to player about how to play the game
-4. Create a readme with game description and video of gameplay
+3. Alter GameModel to take and display color words from letter input

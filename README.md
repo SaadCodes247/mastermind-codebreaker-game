@@ -5,10 +5,13 @@
 
 ### Game Rules:
 > - There are 2 Players: code_maker (1) and code_breaker (2).
+>   
 > 1. The computer or player takes the role of 'code_maker' and generates a color sequence which is hidden from the opposite player
 >    and known as the code_to_break.
+> 
 > 2. The objective for the opposite player, the 'code breaker', is to correctly guess the exact positions
 >    and colors in the code_to_break set by the code_maker
+>    
 > 3. The code_breaker can make one of the guesses below in a series of 8 turns:
 >     -  a correct colour and position of the code to break, 'black' is returned
 >     -  a correct colour but incorrect position in the code_to_break, 'white' is returned
@@ -29,7 +32,7 @@
 
 **Winner!** - The code_breaker is truly the Mastermind for guessing the code_to_break above within the number of guesses!
 
-**Otherwise...** - the code_maker would have been the Mastermind. Not this time, though!
+**Otherwise...** the code_maker would have been the Mastermind. Not this time, though!
 
 **Oh, and BTW** - This gets much harder with 8 colors to guess in 10 guesses!
 

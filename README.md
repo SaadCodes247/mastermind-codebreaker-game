@@ -22,15 +22,15 @@
 >    
 > 2. Turn 1 of 3: The code_breaker guesses [red, blue, green, purple] 
 >
->    - The Response from the terminal is [black, white, white, blank], and the code_breaker still only sees [X, X, X, X]
+>    - The Response from the terminal is [black, white, white, blank], and the code_breaker still sees [X, X, X, X]
 >
 > 3. Turn 2 of 3: The code_breaker tries a different guess like [red, green, blue, yellow]
 >
->    - The Response from the terminal is [black, black, black, black]
+>    - The Response from the terminal is [black, black, black, black] (All correct!)
 
 ## Who is The True Mastermind Above?
 
-**Winner!** - The code_breaker is truly the Mastermind for guessing the code_to_break above within the number of guesses!
+**Winner!** - The code_breaker is the Mastermind for guessing the code_to_break above within the number of guesses!
 
 **Otherwise...** the code_maker would have been the Mastermind. Not this time, though!
 
